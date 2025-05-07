@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincos Delicados - Encantoria Pratas</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins bg-gray-50 overflow-x-hidden">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-playfair font-bold text-gray-800 hover-grow">Encantoria Pratas</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-gray-900">Início</a>
+                <a href="produtos.html" class="nav-link text-gray-900 font-semibold">Produtos</a>
+                <a href="index.html#sobre" class="nav-link text-gray-600 hover:text-gray-900">Sobre</a>
+                <a href="index.html#contato" class="nav-link text-gray-600 hover:text-gray-900">Contato</a>
+            </div>
+            <button class="md:hidden text-gray-600 mobile-menu-button">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white w-full absolute top-full left-0 shadow-lg">
+            <div class="container mx-auto px-4 py-4 space-y-4">
+                <a href="index.html" class="block text-gray-600 hover:text-gray-900">Início</a>
+                <a href="produtos.html" class="block text-gray-600 hover:text-gray-900">Produtos</a>
+                <a href="index.html#sobre" class="block text-gray-600 hover:text-gray-900">Sobre</a>
+                <a href="index.html#contato" class="block text-gray-600 hover:text-gray-900">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Details -->
+    <main class="container mx-auto px-4 pt-24 pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+            <!-- Product Images -->
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden zoom-container">
+                    <img src="D:\\baixamentos\pratas4_editada.jpg" 
+                         alt="Brincos Delicados - Imagem Principal" 
+                         class="w-full h-96 object-cover zoom-image main-product-image" />
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <img src="D:\\baixamentos\pratas4_editada.jpg" 
+                         alt="Brincos Delicados - Detalhe 1" 
+                         class="thumbnail rounded-lg shadow-md cursor-pointer hover-grow" />
+                    <img src="D:\\baixamentos\pratas4_editada.jpg" 
+                         alt="Brincos Delicados - Detalhe 2" 
+                         class="thumbnail rounded-lg shadow-md cursor-pointer hover-grow" />
+                    <img src="D:\\baixamentos\pratas4_editada.jpg" 
+                         alt="Brincos Delicados - Detalhe 3" 
+                         class="thumbnail rounded-lg shadow-md cursor-pointer hover-grow" />
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h1 class="font-playfair text-3xl font-bold text-gray-800 mb-4">Brincos Delicados</h1>
+                <p class="text-2xl font-semibold text-gray-900 mb-6">R$ 129,90</p>
+
+                <div class="space-y-4 mb-8">
+                    <h2 class="font-semibold text-lg">Sobre o Produto</h2>
+                    <p class="text-gray-600">
+                        Par de brincos delicados em prata 925 com acabamento polido.
+                        Design minimalista que adiciona um toque de elegância sutil a qualquer visual.
+                    </p>
+
+                    <div class="space-y-2">
+                        <p class="text-gray-600"><strong>Material:</strong> Prata 925</p>
+                        <p class="text-gray-600"><strong>Acabamento:</strong> Polido</p>
+                        <p class="text-gray-600"><strong>Tamanho:</strong> 1.2cm de comprimento</p>
+                        <p class="text-gray-600"><strong>Peso aproximado:</strong> 1.5g (par)</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="font-semibold text-lg">Cuidados</h2>
+                    <ul class="text-gray-600 list-disc list-inside space-y-2">
+                        <li>Evite contato com perfumes e produtos químicos</li>
+                        <li>Guarde em local seco e protegido da luz solar</li>
+                        <li>Limpe com pano macio e específico para prata</li>
+                    </ul>
+                </div>
+
+                <div class="mt-8 space-y-4">
+                    <a href="https://api.whatsapp.com/send?phone=5534999639170" target="_blank" 
+                       class="w-full flex items-center justify-center space-x-2 bg-green-600 text-white py-3 rounded-full hover:bg-green-700 transition duration-300 button-hover">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Comprar pelo WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Encantoria Pratas. Todos os direitos reservados.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.instagram.com/encantoriapratas/" class="hover:text-gray-300 hover-grow"><i class="fab fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5534999639170" class="hover:text-gray-300 hover-grow"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
